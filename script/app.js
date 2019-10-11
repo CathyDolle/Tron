@@ -204,7 +204,7 @@
 	function drawFrequencyData() {
 		analyser.getByteFrequencyData(waveformData);
 
-		canvasContext.fillStyle = '../images/soundtrack.jpg';
+		canvasContext.fillStyle = 'rgba(45, 52, 54,0.2)';
 		canvasContext.fillRect(0, 0, canvas.width, canvas.height);
 		canvasContext.fillStyle = '#333';
 
