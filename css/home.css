@@ -4,12 +4,10 @@
 @font-face {
   font-family: "TRON";
   src: url("../fonts/TR2N.TTF"); }
-.comingFade {
-  animation: fade 10s cubic-bezier(0.4, 0, 0.2, 1); }
+.opacityFade {
+  animation: degradation 10s cubic-bezier(0.4, 0, 0.2, 1); }
 
-@keyframes fade {
-  0% {
-    opacity: 0; }
+@keyframes degradation {
   50% {
     opacity: 0; }
   100% {
