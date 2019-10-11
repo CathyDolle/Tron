@@ -15,7 +15,7 @@ body{
     font-weight: normal;
     font-style: normal;
 }
- 
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "fontello";
     font-style: normal;
@@ -33,9 +33,9 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
- 
-.icon-play:before { content: '\e801'; } /* '' */
-.icon-pause:before { content: '\e802'; } /* '' */
+
+.icon-right-dir:before { content: '\e800'; } /* '' */
+.icon-pause:before { content: '\f00e'; } /* '' */
 
 .clearfix:after {
     visibility: hidden;
@@ -94,7 +94,7 @@ div#notification-area {
     flex-direction: row;
     justify-content: center;
     margin-right: 10px;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 .category-title {
@@ -278,4 +278,3 @@ input[type=range]::-ms-thumb {
     cursor: pointer;
     color: #888888;
 }
-
