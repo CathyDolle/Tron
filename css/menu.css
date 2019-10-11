@@ -1,0 +1,179 @@
+.menu {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue';
+  font-size: 62.5%;
+  background-image: url("../images/menu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+
+.hidden {
+  display: none; }
+
+.menu__header {
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  z-index: 100; }
+  .menu__header__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%; }
+  .menu__header svg {
+    cursor: pointer; }
+
+/* MAIN CONTAINER */
+.main__container {
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+
+/* LINK MENU */
+.menu__item {
+  /* SYNOPSIS */
+  /* CHARACTERS */
+  /* CHARACTERS */
+  /* GALLERY */ }
+  .menu__item__top__right {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    width: 200px;
+    height: 50px;
+    border-left: 0.05rem solid #ffffff;
+    border-top: 0.05rem solid #ffffff; }
+    .menu__item__top__right__label {
+      position: absolute;
+      top: -0.6em;
+      left: calc(100% + 20px);
+      color: #ffffff;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      font-weight: 300; }
+  .menu__item__bottom__right {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 50px;
+    border-left: 0.05rem solid #ffffff;
+    border-bottom: 0.05rem solid #ffffff; }
+    .menu__item__bottom__right__label {
+      position: absolute;
+      bottom: -0.6em;
+      left: calc(100% + 20px);
+      color: #ffffff;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      font-weight: 300; }
+  .menu__item__bottom__left {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 200px;
+    height: 50px;
+    border-right: 0.05rem solid #ffffff;
+    border-bottom: 0.05rem solid #ffffff; }
+    .menu__item__bottom__left__label {
+      position: absolute;
+      bottom: -0.6em;
+      right: calc(100% + 20px);
+      color: #ffffff;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      font-weight: 300; }
+  .menu__item__top__left {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    width: 200px;
+    height: 50px;
+    border-right: 0.05rem solid #ffffff;
+    border-top: 0.05rem solid #ffffff; }
+    .menu__item__top__left__label {
+      position: absolute;
+      top: -0.6em;
+      right: calc(100% + 20px);
+      color: #ffffff;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      font-weight: 300; }
+
+.blue__line {
+  text-decoration: none; }
+
+.blue__line:after {
+  display: block;
+  content: '';
+  border-bottom: solid 0.15rem cyan;
+  width: 94%;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out; }
+
+.blue__line:hover:after {
+  transform: scaleX(1); }
+
+.blue__line:hover {
+  font-weight: 300;
+  cursor: pointer;
+  display: inline-block; }
+
+/* CIRCLE NEON CENTER */
+.circle {
+  position: absolute;
+  transform: translate(-8.5rem, -8.5rem);
+  height: 13rem;
+  width: 13rem;
+  background-color: transparent;
+  border: 2rem solid #151515;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0rem 0rem 2.5rem cyan;
+  animation: myanimation1 10s infinite; }
+
+@keyframes myanimation1 {
+  0% {
+    box-shadow: 0rem 0rem 2.5rem cyan; }
+  25% {
+    box-shadow: 0rem 0rem 2.5rem white; }
+  50% {
+    box-shadow: 0rem 0rem 2.5rem #ffe137; }
+  75% {
+    box-shadow: 0rem 0rem 2.5rem orange; }
+  100% {
+    box-shadow: 0rem 0rem 2.5rem cyan; } }
+.circle2 {
+  position: absolute;
+  transform: translate(-6.5rem, -6.5rem);
+  height: 13rem;
+  width: 13rem;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: inset 0rem 0rem 2.5rem cyan;
+  animation: myanimation 10s infinite; }
+
+@keyframes myanimation {
+  0% {
+    box-shadow: inset 0rem 0rem 2.5rem cyan; }
+  25% {
+    box-shadow: inset 0rem 0rem 2.5rem white; }
+  50% {
+    box-shadow: inset 0rem 0rem 2.5rem #ffe137; }
+  75% {
+    box-shadow: inset 0rem 0rem 2.5rem orange; }
+  100% {
+    box-shadow: inset 0rem 0rem 2.5rem cyan; } }
+
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,UAAU,EAAE,iCAAiC;EAE7C,mBAAmB,EAAE,GAAG;EACxB,eAAe,EAAE,WAAW",
+"sources": ["../sass/synopsis.scss"],
+"names": [],
+"file": "synopsis.css"
+}

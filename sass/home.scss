@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica.ttf") format("ttf"),
+           url("/fonts/Helvetica-Bold.ttf") format("ttf");
+   }
+
+@font-face {
+    font-family: "TRON";
+    src: url("../fonts/TR2N.TTF"),
+   }
+
+$cyan-color : #41edfc;
+$text-shadow : $cyan-color 0px 0px 25px;
+$text : 'Helvetica';
+$logo-text : 'TRON';
+
+body{
+    overflow: hidden;
+    margin: 0;
+    background: #020202;
+    font-size: 62.5%;
+    transition: all 700ms cubic-bezier(1,.47,.27,.99);
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+.main{
+    &__parallax{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        &__container{
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        bottom: -50px;
+        left: -50px;
+        &__image{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+        &__character{
+            position: absolute;
+            bottom: -25px;
+            left: 10%;
+            z-index: 5;
+            max-width: 100%;
+            width: 90%;
+            }
+        }
+    }
+    &__home{
+        position: relative;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        &__container{
+            position: absolute;
+            top: 0;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 90%;
+            text-align: center;
+            &__logo{
+                color: $cyan-color;
+                text-shadow: $text-shadow;
+                font-size: 5.2rem;
+                font-family: $logo-text;
+            }
+            &__explore{
+                margin: 70px 25px; 
+                li{
+                    a{
+                        padding: 55px 25px; //Change padding to have cercle or not
+                        border: 1px solid $cyan-color;
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 5px $cyan-color;
+                        color: white;
+                        text-decoration: none;
+                        letter-spacing: 2px;
+                        font-size: 0.7rem;
+                        font-family: $text;
+                        transition: all 0.5s ease;
+                    }
+                    a:hover{
+                        box-shadow: 0px 0px 15px $cyan-color;
+                    }
+                }
+            }
+        }
+    }
+    &__smoke{
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.3;
+
+        user-select: none;
+        img{
+            width: 100%;
+        }
+        &__1{
+            top: 50%;
+            animation: smokeOne 120s infinite linear;
+
+            user-select: none;
+        }
+        &__2{
+            top: -50%;
+            animation: smokeOne 110s infinite linear;
+
+            user-select: none;
+        }
+        &__3{
+            animation: smokeOne 70s infinite linear;
+
+            user-select: none;
+        }
+        &__4{
+            animation: smokeTwo 90s infinite linear;
+
+            user-select: none;
+        }
+        &__5{
+            animation: smokeTwo 900s infinite linear;
+
+            user-select: none;
+        }
+    }
+    &__pedagogicalMention{
+        position: fixed;
+        bottom: 10px;
+        z-index: 10;
+        width: 100vw;
+        color: white;
+        text-align: center;
+        font-style: italic;
+        font-family: $text;
+        opacity: 0.75;
+    }
+}
+
+*[class^="smoke_"]{
+    position: absolute;
+    z-index: -5;
+    // opacity: 0.1;
+}
+
+@keyframes smokeOne{
+    0%{
+        transform: translateX(0%)
+    }
+    100%{
+        transform: translateX(100%)
+    }
+}
+
+@keyframes smokeTwo{
+    0%{
+        transform: translateX(100%)
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes smokeTwo{
+    0%{
+        transform: translateX(100%)
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}

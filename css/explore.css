@@ -1,0 +1,121 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaNeue.ttc format(ttc)"); }
+@font-face {
+  font-family: "TRON";
+  src: url("../fonts/TR2N.TTF format(ttf)"); }
+/* TYPOGRAPHY */
+h1 {
+  margin-left: 1rem;
+  width: 100%;
+  color: white;
+  text-align: center;
+  letter-spacing: 1rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: "Helvetica";
+  transform: translateX(-5%); }
+
+h2 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Helvetica"; }
+
+/* EXPLORE will see if we need it ..*/
+/* FIXED POSITION */
+.fixed {
+  position: fixed; }
+
+/* HEADER */
+.explore__header {
+  top: 0;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  height: 20%; }
+  .explore__header__menu__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    cursor: pointer; }
+  .explore__header__title__container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100%; }
+
+/* BIG DIV SECTION CONTAINER */
+.explore__section__container {
+  margin: 20vh auto;
+  width: 80%;
+  height: 240vh; }
+  .explore__section__container__synopsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh; }
+  .explore__section__container__characters {
+    width: 100%;
+    height: 60vh; }
+  .explore__section__container__soundtrack {
+    width: 100%;
+    height: 60vh;
+    background: orange; }
+  .explore__section__container__gallery {
+    width: 100%;
+    height: 60vh; }
+
+/* FOOTER */
+.footer {
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 20%; }
+  .footer__next__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%; }
+  .footer__legal__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%; }
+    .footer__legal__container p {
+      color: white;
+      font-weight: 100;
+      font-family: "helvetica"; }
+  .footer__previous__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%; }
+
+.footer__next__container__next {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none; }
+
+.footer__next__container__previous {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none; }
+
+/*# sourceMappingURL=explore.css.map */
