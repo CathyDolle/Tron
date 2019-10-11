@@ -21,28 +21,31 @@ body {
     opacity: 1;
     transform: translateY(0vh); } }
 [class^="icon-"]:before, [class*=" icon-"]:before {
+  text-align: center;
   display: inline-block;
-  margin-right: .2em;
-  margin-left: .2em;
+  margin-right: 3em;
+  margin-left: 0.5em;
   width: 1em;
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  font-weight: normal;
   font-style: normal;
   font-variant: normal;
-  font-family: "fontello";
+  font-family: "helvetica";
   line-height: 1em;
+  color: cyan;
+  letter-spacing: 0.2em;
+  font-weight: 600;
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-play:before {
-  content: '\e800'; }
+  content: '\PLAY'; }
 
 /* '' */
 .icon-pause:before {
-  content: '\e801'; }
+  content: '\STOP'; }
 
 /* '' */
 .clearfix:after {
