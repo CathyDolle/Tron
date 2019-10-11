@@ -51,8 +51,8 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-right-dir:before { content: '\e800'; } /* '' */
-.icon-pause:before { content: '\f00e'; } /* '' */
+.icon-play:before { content: '\e800'; } /* '' */
+.icon-pause:before { content: '\e94a'; } /* '' */
 
 .clearfix:after {
     display: block;

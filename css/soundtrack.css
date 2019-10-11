@@ -37,12 +37,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-right-dir:before {
+.icon-play:before {
   content: '\e800'; }
 
 /* '' */
 .icon-pause:before {
-  content: '\f00e'; }
+  content: '\e94a'; }
 
 /* '' */
 .clearfix:after {
