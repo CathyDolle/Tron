@@ -10,6 +10,14 @@ body {
   font-family: 'fontello';
   src: url("../font/fontello.eot?8865811");
   src: url("../font/fontello.eot?8865811#iefix") format("embedded-opentype"), url("../font/fontello.woff?8865811") format("woff"), url("../font/fontello.ttf?8865811") format("truetype"), url("../font/fontello.svg?8865811#fontello") format("svg"); }
+.opacityFade {
+  animation: degradation 5s cubic-bezier(0.4, 0, 0.2, 1); }
+
+@keyframes degradation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .comingFade {
   animation: fade 2s cubic-bezier(0.4, 0, 0.2, 1); }
 

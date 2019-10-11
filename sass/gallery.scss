@@ -5,6 +5,20 @@ body{
   }
 
 //OPEN ANIMATION
+.opacityFade{
+    animation: degradation 5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  
+  @keyframes degradation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+  
+
 .comingFade{
     animation: fade 2s cubic-bezier(0.4, 0.0, 0.2, 1);
   }
