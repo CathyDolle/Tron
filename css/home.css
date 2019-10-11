@@ -4,45 +4,55 @@
 @font-face {
   font-family: "TRON";
   src: url("../fonts/TR2N.TTF"); }
+.comingFade {
+  animation: fade 10s cubic-bezier(0.4, 0, 0.2, 1); }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .loading-page {
-  cursor: none;
   position: fixed;
+  z-index: 1000;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100vh;
   background: radial-gradient(#1c1c1c, #020202);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 1000;
-  overflow: hidden; }
+  cursor: none; }
   .loading-page .logo {
-    user-select: none;
-    font-size: 3rem;
-    text-align: center;
-    font-family: "TRON";
-    color: #41edfc;
-    text-shadow: #41edfc 0px 0px 25px;
     margin-top: 0;
-    transition: all 0.5s ease; }
+    color: #41edfc;
+    text-align: center;
+    text-shadow: #41edfc 0px 0px 25px;
+    font-size: 3rem;
+    font-family: "TRON";
+    transition: all 0.5s ease;
+    user-select: none; }
 
 .loader {
   height: 2px; }
   .loader__1 {
+    position: fixed;
+    left: -50%;
     width: 50%;
     height: 2px;
     background: #41edfc;
-    position: fixed;
-    left: -50%;
     transition: all 2s cubic-bezier(0.19, 0.89, 0.75, 0.29); }
   .loader__2 {
-    width: 50%;
-    height: 2px;
     position: fixed;
     right: 0%;
     width: 50%;
+    width: 50%;
+    height: 2px;
     background: orange;
-    transform: translateX(100%);
-    transition: all 2s cubic-bezier(0.19, 0.89, 0.75, 0.29); }
+    transition: all 2s cubic-bezier(0.19, 0.89, 0.75, 0.29);
+    transform: translateX(100%); }
 
 .loadingBrightness_cyan {
   animation: loadingBrightness_cyan 2s infinite linear; }
@@ -133,8 +143,8 @@ body {
     .main__home__container__explore {
       margin: 70px 25px; }
       .main__home__container__explore li a {
-        outline: none;
         padding: 55px 25px;
+        outline: none;
         border: 1px solid #41edfc;
         border-radius: 50%;
         box-shadow: 0px 0px 5px #41edfc;
