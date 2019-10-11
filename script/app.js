@@ -42,9 +42,9 @@
 	 **/
 	function initializeSounds() {
 		startWaitingScreen();
-		var daftPath =  './media/daft.mp3';
-		var daft1Path = './media/daft1.mp3';
-		var daft2Path = './media/daft2.mp3';
+		var daftPath =  '../media/daft.mp3';
+		var daft1Path = '../media/daft1.mp3';
+		var daft2Path = '../media/daft2.mp3';
 
 		daft = new Pizzicato.Sound({
 			source: 'file',
