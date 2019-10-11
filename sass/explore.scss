@@ -105,9 +105,12 @@ h2 {
     }
 
     &__soundtrack {
+        display: flex;
+        position: relative;
+        align-items: center;
         width: 100%;
         height: 60vh;
-        background: orange;
+        // background: orange;
         // opacity: 0;
     }
 
