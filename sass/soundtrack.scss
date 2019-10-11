@@ -6,30 +6,47 @@ body{
 
 
 @font-face {
+    font-weight: normal;
+    font-style: normal;
     font-family: 'fontello';
     src: url('../font/fontello.eot?8865811');
     src: url('../font/fontello.eot?8865811#iefix') format('embedded-opentype'),
          url('../font/fontello.woff?8865811') format('woff'),
          url('../font/fontello.ttf?8865811') format('truetype'),
          url('../font/fontello.svg?8865811#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
+//OPEN ANIMATION
+.comingFade{
+    animation: fade 2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  
+  @keyframes fade{
+    0%{
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+  }
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
     display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
     margin-right: .2em;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1em;
     margin-left: .2em;
+    width: 1em;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-family: "fontello";
+    line-height: 1em;
+
+    speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -38,12 +55,12 @@ body{
 .icon-pause:before { content: '\f00e'; } /* '' */
 
 .clearfix:after {
-    visibility: hidden;
     display: block;
-    font-size: 0;
-    content: " ";
+    visibility: hidden;
     clear: both;
     height: 0;
+    content: " ";
+    font-size: 0;
 }
 
 // html {
@@ -56,13 +73,13 @@ body{
 // }
 
 div#notification-area {
-    color: #D0CCCC;
-    z-index: 2;
     position: fixed;
-    text-align: center;
-    width: 100%;
+    z-index: 2;
     margin-top: 40px;
+    width: 100%;
     background: rgba(128, 128, 128, 0.5);
+    color: #D0CCCC;
+    text-align: center;
     line-height: 30px;
 }
 
@@ -85,8 +102,8 @@ div#notification-area {
 
 #slider-controls {
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    justify-content: center;
 }
 
 .slider-group {
@@ -98,13 +115,13 @@ div#notification-area {
 }
 
 .category-title {
-    font-family: "helvetica";
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
     margin-bottom: 10px;
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "helvetica";
 }
 
 .slider-checkbox {
@@ -118,11 +135,11 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked + label:before {
+    background-color: #EC3139;
+    color: #ECECEC;
     content: "";
     font-size: 33px;
-    color: #ECECEC;
     line-height: 14px;
-    background-color: #EC3139;
 }
 
 .disconnected label.checkbox-label {
@@ -130,50 +147,53 @@ input[type=checkbox]:checked + label:before {
 }
 
 label.checkbox-label:before {
-    content: "";
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-color: #aaa;
     border-radius: 3px;
+    background-color: #aaa;
+    content: "";
 }
 
 input[type=range] {
-    -webkit-appearance: slider-vertical;
-    writing-mode: bt-lr;
     width: 50px;
     height: 120px;
+
+    -webkit-appearance: slider-vertical;
+    writing-mode: bt-lr;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    background-color: #333;
     width: 6px;
+    background-color: #333;
 }
 input[type=range]::-moz-range-track {
-    background-color: #333;
     width: 6px;
+    background-color: #333;
 }
 input[type=range]::-ms-track {
-    background-color: white;
-    width: 6px;
-    height: 120px;
     margin: 0px;
     padding: 0px;
+    width: 6px;
+    height: 120px;
     border: 0 none;
+    background-color: white;
+
     -webkit-appearance: none;
 }
 
 input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    margin-left: -5px;
+    width: 16px;
     /*border: 1px solid #000000;*/
     height: 36px;
-    width: 16px;
+    outline: 0;
     border-radius: 3px;
     background: #ffffff;
     cursor: pointer;
-    margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-    margin-left: -5px;
-    outline: 0;
+
+    -webkit-appearance: none;
 }
 input[type=range]::-moz-range-thumb {
     width: 10px;
@@ -181,10 +201,10 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
 }
 input[type=range]::-ms-thumb {
+    margin-left: 0;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    margin-left: 0;
     background: #ffffff;
 }
 
@@ -193,36 +213,36 @@ input[type=range]::-ms-thumb {
 }
 
 .slider-label {
-    font-family: "helvetica";
+    margin-top: 5px;
     width: 50px;
+    color: white;
     text-align: center;
     font-size: 0.7em;
-    color: white;
-    margin-top: 5px;
+    font-family: "helvetica";
 }
 
 .control-category:before {
-    content:'';
     position: absolute;
-    width: 1px;
     top: 0;
+    width: 1px;
     height: 180px;
     background: rgba(255,255,255, 0.3);
+    content:'';
 }
 
 #leap-motion-indicator {
-    margin: 0 auto;
-    width: 600px;
-    margin-top: -29px;
     display: flex;
+    margin: 0 auto;
+    margin-top: -29px;
+    width: 600px;
 }
 
 .leap-motion-logo {
-    background: #EC3139;
+    margin-left: -78px;
     width: 80px;
     height: 40px;
-    margin-left: -78px;
     border-radius: 10px;
+    background: #EC3139;
 }
 
 .disconnected .leap-motion-logo {
@@ -230,16 +250,16 @@ input[type=range]::-ms-thumb {
 }
 
 .leap-motion-line {
+    z-index: -1;
+    margin-top: 18px;
     width: 535px;
     height: 3px;
     background: #EC3139;
-    margin-top: 18px;
-    z-index: -1;
 }
 
 .usb-logo {
-    margin-top: -3px;
     display: none;
+    margin-top: -3px;
 }
 
 .disconnected .usb-logo {
@@ -247,24 +267,24 @@ input[type=range]::-ms-thumb {
 }
 
 #instructions {
-    line-height: 23px;
-    font-family: "helvetica";
     margin: 0 auto;
-    width: 535px;
-    text-align: center;
     margin-top: 10px;
+    width: 535px;
     color: white;
-    font-size: 15px;
+    text-align: center;
     letter-spacing: 1px;
     font-weight: 100;
+    font-size: 15px;
+    font-family: "helvetica";
+    line-height: 23px;
 }
 
 #controls {
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    font-size: 1.3em;
     color: white;
+    font-size: 1.3em;
     font-family: sans-serif;
 }
 
@@ -275,6 +295,6 @@ input[type=range]::-ms-thumb {
 
 #controls > div:hover {
     margin: 10px;
-    cursor: pointer;
     color: #888888;
+    cursor: pointer;
 }

@@ -4,10 +4,25 @@ body{
   background-size: 100vw 100vh;
 }
 
+//OPEN ANIMATION
+.comingFade{
+  animation: fade 2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes fade{
+  0%{
+      opacity: 0;
+      transform: translateY(10vh);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0vh);
+  }
+}
+
 /* CHARACTERS DESCRIPTION */
 
 .characters__description{
-
   display: flex;
   justify-content: center;
   width: 100%;
@@ -15,7 +30,6 @@ body{
 }
 
 .characters__description__container{
-
   display: flex;
   flex-direction: column;
   width: 50vw;
