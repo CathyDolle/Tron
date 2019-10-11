@@ -31,6 +31,8 @@ menuClose.addEventListener('click', function(){
 })
 
 
+
+
 /* CHARACTERS */
 
 const name1 = document.querySelector('.name1')
