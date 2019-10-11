@@ -206,7 +206,7 @@
 
 		canvasContext.fillStyle = 'rgba(45, 52, 54,0.2)';
 		canvasContext.fillRect(0, 0, canvas.width, canvas.height);
-		canvasContext.fillStyle = '#333';
+		canvasContext.fillStyle = 'rgba(45, 52, 54,0.2)';
 
 		var sliceWidth = canvas.width / analyser.frequencyBinCount * 6;
 		var x = 0;
